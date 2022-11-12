@@ -16,3 +16,9 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+  background-image: linear-gradient(#F7FBFC, #769FCD);
+  height: 100vh;
+}
