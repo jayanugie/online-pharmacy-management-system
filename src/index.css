@@ -22,3 +22,9 @@ html {
   background-image: linear-gradient(#F7FBFC, #769FCD);
   height: 100vh;
 }
+
+@media (max-width: 1024px) {
+  html {
+    height: auto;
+  }
+}
