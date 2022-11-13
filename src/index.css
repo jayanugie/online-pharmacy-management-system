@@ -18,7 +18,23 @@ code {
 @tailwind utilities;
 
 
-html {
-  background-image: linear-gradient(#F7FBFC, #769FCD);
-  height: auto;
+.x-box {
+  /* border-radius: 50%; */
+  background-color: green;
+
+  background: repeating-conic-gradient(
+    from 0deg,
+    blue 0deg calc(3.6deg * 35),
+    orange calc(3.6deg * 35) calc(3.6deg * 45),
+    black calc(3.6deg * 45) calc(3.6deg * 65),
+    red calc(3.6deg * 65) calc(3.6deg * 75),
+    aqua calc(3.6deg * 75) calc(3.6deg * 80),
+    green calc(3.6deg * 80) calc(3.6deg * 90),
+    gray calc(3.6deg * 90) calc(3.6deg * 100)
+  );
+}
+
+.x-box-cont {
+  font-size: 30px;
+  padding-left: 50px;
 }

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NextRegister from "./pages/NextRegister";
+import Dashboard from "./pages/Dashboard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,6 +15,7 @@ root.render(
       <Route path="/" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/register-2" element={<NextRegister />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   </BrowserRouter>
 );
