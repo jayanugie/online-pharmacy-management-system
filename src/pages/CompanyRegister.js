@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "../index.css";
 
-const Register = () => {
+const CompanyRegister = () => {
   return (
     <div className="bg-register">
       <Navbar />
@@ -11,11 +11,11 @@ const Register = () => {
         <div className="basis-1/2 justify-center hidden lg:flex">
           <div className="flex-col">
             <div className="flex bg-sky-500 rounded-lg">
-              <img src="plus.png" className="w-8 h-8 m-2" alt="register" />
+              <img src="/plus.png" className="w-8 h-8 m-2" alt="register" />
               <p className="m-3 font-semibold">Pendaftaran Sarana</p>
             </div>
             <div className="flex">
-              <img src="check.png" className="w-8 h-8 m-2" alt="register" />
+              <img src="/check.png" className="w-8 h-8 m-2" alt="register" />
               <p className="m-3 text-sm">Register</p>
             </div>
           </div>
@@ -64,13 +64,13 @@ const Register = () => {
               </h1>
               <div>
                 <div className="flex p-2 bg-sky-500 rounded-t-lg">
-                  <img src="paper.png" alt="paper" className="h-6" />
+                  <img src="/paper.png" alt="paper" className="h-6" />
                   <p className="p-1 text-xs lg:text-sm text-white">NIB *</p>
                 </div>
                 <div className="p-5 bg-white rounded-b-lg hover:cursor-pointer">
                   <div className="flex justify-center p-2">
                     <img
-                      src="upload.png"
+                      src="/upload.png"
                       alt="upload"
                       className="h-10 lg:h-14"
                     />
@@ -80,7 +80,7 @@ const Register = () => {
                   </p>
                 </div>
                 <div className="my-10">
-                  <a href="/register-2">
+                  <a href="/register/account">
                     <button className="w-full rounded-lg bg-orange-400 hover:bg-orange-300 text-white p-2">
                       Selanjutnya
                     </button>
@@ -95,4 +95,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default CompanyRegister;

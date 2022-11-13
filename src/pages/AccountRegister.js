@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-const NextRegister = () => {
+const AccountRegister = () => {
   return (
     <div className="bg-next-register">
       <Navbar />
@@ -10,11 +10,11 @@ const NextRegister = () => {
         <div className="basis-1/2 justify-center hidden lg:flex">
           <div className="flex-col space-y-2">
             <div className="flex bg-sky-500 rounded-lg">
-              <img src="plus.png" className="w-8 h-8 m-2" alt="register" />
+              <img src="/plus.png" className="w-8 h-8 m-2" alt="register" />
               <p className="m-3 font-semibold">Pendaftaran Sarana</p>
             </div>
             <div className="flex bg-sky-500 rounded-lg">
-              <img src="check.png" className="w-8 h-8 m-2" alt="register" />
+              <img src="/check.png" className="w-8 h-8 m-2" alt="register" />
               <p className="m-3 font-semibold">Register</p>
             </div>
           </div>
@@ -51,7 +51,7 @@ const NextRegister = () => {
               </div>
               <div className="flex flex-row">
                 <div className="basis-1/2 mx-2">
-                  <a href="/register">
+                  <a href="/register/company">
                     <button className="w-full rounded-lg bg-white hover:bg-gray-300 text-gray-500 p-2">
                       Kembali
                     </button>
@@ -73,4 +73,4 @@ const NextRegister = () => {
   );
 };
 
-export default NextRegister;
+export default AccountRegister;

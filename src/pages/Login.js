@@ -22,7 +22,7 @@ const Login = () => {
 
         {/* right content */}
         <div className="basis-1/2 flex justify-center">
-          <img src="person.png" alt="person" className="lg:h-64 h-48" />
+          <img src="/person.png" alt="person" className="lg:h-64 h-48" />
         </div>
       </div>
 
@@ -68,7 +68,7 @@ const Login = () => {
         </button>
         <p className="text-xs lg:text-sm text-center mt-4 pb-10 ">
           Belum Registrasi? Silakan klik{" "}
-          <a className="font-semibold text-orange-600" href="/register">
+          <a className="font-semibold text-orange-600" href="/register/company">
             Daftar
           </a>
         </p>

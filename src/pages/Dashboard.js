@@ -16,35 +16,35 @@ const Dashboard = () => {
               className="flex bg-gray-200 text-blue-500 p-2 border-l-4 rounded-r-sm border-blue-500 font-bold"
               href="/dashboard"
             >
-              <img src="home.png" alt="home" className="w-8 h-8" />
+              <img src="/home.png" alt="home" className="w-8 h-8" />
               <p className="pt-1 pl-6 ">Homepage</p>
             </a>
             <a
               className="flex hover:bg-gray-200 hover:text-blue-500 p-2 hover:border-l-4 rounded-r-sm border-blue-500 hover:font-bold"
               href="/sales"
             >
-              <img src="sales.png" alt="sales" className="w-8 h-8" />
+              <img src="/sales.png" alt="sales" className="w-8 h-8" />
               <p className="pt-1 pl-6">Sales</p>
             </a>
             <a
               className="flex hover:bg-gray-200 hover:text-blue-500 p-2 hover:border-l-4 rounded-r-sm border-blue-500 hover:font-bold"
               href="/inventory"
             >
-              <img src="inventory.png" alt="inventory" className="w-8 h-8" />
+              <img src="/inventory.png" alt="inventory" className="w-8 h-8" />
               <p className="pt-1 pl-6">Inventory</p>
             </a>
             <a
               className="flex hover:bg-gray-200 hover:text-blue-500 p-2 hover:border-l-4 rounded-r-sm border-blue-500 hover:font-bold"
               href="/purchase"
             >
-              <img src="purchase.png" alt="purchase" className="w-8 h-8" />
+              <img src="/purchase.png" alt="purchase" className="w-8 h-8" />
               <p className="pt-1 pl-6">Purchase</p>
             </a>
             <a
               className="flex hover:bg-gray-200 hover:text-blue-500 p-2 hover:border-l-4 rounded-r-sm border-blue-500 hover:font-bold"
               href="/user-management"
             >
-              <img src="user.png" alt="management" className="w-8 h-8" />
+              <img src="/user.png" alt="management" className="w-8 h-8" />
               <p className="pt-1 pl-6">User Management</p>
             </a>
           </div>
@@ -54,17 +54,17 @@ const Dashboard = () => {
           {/* top navbar */}
           <div className="border shadow-md flex justify-end space-x-3 p-3 rounded-sm bg-white">
             <img
-              src="help.png"
+              src="/help.png"
               alt="question"
               className="lg:w-7 lg:h-7 h-5 w-5 mt-2.5"
             />
             <img
-              src="message.png"
+              src="/message.png"
               alt="message"
               className="lg:w-7 lg:h-7 h-5 w-5 mt-2.5"
             />
             <img
-              src="user.png"
+              src="/user.png"
               alt="profile"
               className="lg:w-7 lg:h-7 h-5 w-5 mt-2.5"
             />
@@ -110,7 +110,7 @@ const Dashboard = () => {
                 <div className="border shadow-md rounded-lg p-5">
                   <div className="relative">
                     <img
-                      src="more.png"
+                      src="/more.png"
                       alt="threedots"
                       className="absolute right-0 top-0 h-5 w-5"
                     />
@@ -224,7 +224,7 @@ const Dashboard = () => {
                 <p className="text-lg">Inventory</p>
                 <div className="relative">
                   <img
-                    src="more.png"
+                    src="/more.png"
                     alt="threedots"
                     className="absolute right-0 bottom-2 w-5 h-5"
                   />

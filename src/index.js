@@ -4,8 +4,8 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
-import Register from "./pages/Register";
-import NextRegister from "./pages/NextRegister";
+import CompanyRegister from "./pages/CompanyRegister";
+import AccountRegister from "./pages/AccountRegister";
 import Dashboard from "./pages/Dashboard";
 import PageNotFound from "./pages/PageNotFound";
 
@@ -14,8 +14,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/register-2" element={<NextRegister />} />
+      <Route path="/register/company" element={<CompanyRegister />} />
+      <Route path="/register/account" element={<AccountRegister />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
