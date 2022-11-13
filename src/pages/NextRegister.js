@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 const NextRegister = () => {
   return (
-    <div>
+    <div className="bg-next-register">
       <Navbar />
 
       <div className="flex flex-row">
@@ -58,7 +58,7 @@ const NextRegister = () => {
                   </a>
                 </div>
                 <div className="basis-1/2 mx-2">
-                  <a href="/register-2">
+                  <a href="/dashboard">
                     <button className="w-full rounded-lg bg-orange-400 hover:bg-orange-300 text-white p-2">
                       Register
                     </button>

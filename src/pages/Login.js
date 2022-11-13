@@ -5,7 +5,7 @@ import { HiMail, HiLockClosed } from "react-icons/hi";
 
 const Login = () => {
   return (
-    <div>
+    <div className="bg-login">
       <Navbar />
 
       {/* welcome */}
@@ -66,7 +66,7 @@ const Login = () => {
         <button className="mt-4 p-2 rounded-lg bg-sky-600 text-white w-full hover:bg-sky-500">
           Masuk
         </button>
-        <p className="text-xs lg:text-sm text-center mt-4 mb-10 ">
+        <p className="text-xs lg:text-sm text-center mt-4 pb-10 ">
           Belum Registrasi? Silakan klik{" "}
           <a className="font-semibold text-orange-600" href="/register">
             Daftar

@@ -1,70 +1,83 @@
 import React from "react";
-import "../index.css";
 
 const Dashboard = () => {
   return (
-    <div className="font-semibold">
+    <div className="font-semibold bg-dashboard">
       <div className="flex flex-row">
         {/* navbar aside */}
-        <div className="border basis-1/5 p-5 h-screen hidden lg:block m-1 shadow-md rounded-sm">
-          <img src="logo192.png" className="w-12 mb-40" alt="logo" />
+        <div className="border basis-1/5 p-5 h-screen hidden lg:block m-1 shadow-md rounded-sm bg-white">
+          <p className="w-12 font-bold text-lg md:text-2xl lg:text-4xl mb-40">
+            OLIN
+          </p>
           <div className="space-y-4">
             <a
-              className="flex hover:bg-gray-200 hover:text-blue-500 p-2 hover:border-l-4 rounded-r-sm border-blue-500 hover:font-bold"
+              className="flex bg-gray-200 text-blue-500 p-2 border-l-4 rounded-r-sm border-blue-500 font-bold"
               href="/dashboard"
             >
-              <img src="logo192.png" alt="home" className="w-8 h-8" />
-              <p className="pt-1 pl-6">Homepage</p>
+              <img src="home.png" alt="home" className="w-8 h-8" />
+              <p className="pt-1 pl-6 ">Homepage</p>
             </a>
             <a
               className="flex hover:bg-gray-200 hover:text-blue-500 p-2 hover:border-l-4 rounded-r-sm border-blue-500 hover:font-bold"
               href="/sales"
             >
-              <img src="logo192.png" alt="sales" className="w-8 h-8" />
+              <img src="sales.png" alt="sales" className="w-8 h-8" />
               <p className="pt-1 pl-6">Sales</p>
             </a>
             <a
               className="flex hover:bg-gray-200 hover:text-blue-500 p-2 hover:border-l-4 rounded-r-sm border-blue-500 hover:font-bold"
               href="/inventory"
             >
-              <img src="logo192.png" alt="inventory" className="w-8 h-8" />
+              <img src="inventory.png" alt="inventory" className="w-8 h-8" />
               <p className="pt-1 pl-6">Inventory</p>
             </a>
             <a
               className="flex hover:bg-gray-200 hover:text-blue-500 p-2 hover:border-l-4 rounded-r-sm border-blue-500 hover:font-bold"
               href="/purchase"
             >
-              <img src="logo192.png" alt="purchase" className="w-8 h-8" />
+              <img src="purchase.png" alt="purchase" className="w-8 h-8" />
               <p className="pt-1 pl-6">Purchase</p>
             </a>
             <a
               className="flex hover:bg-gray-200 hover:text-blue-500 p-2 hover:border-l-4 rounded-r-sm border-blue-500 hover:font-bold"
               href="/user-management"
             >
-              <img src="logo192.png" alt="management" className="w-8 h-8" />
+              <img src="user.png" alt="management" className="w-8 h-8" />
               <p className="pt-1 pl-6">User Management</p>
             </a>
           </div>
         </div>
 
-        <div className="basis-4/5 m-1 rounded-lg">
+        <div className="md:basis-4/5 m-0 md:-1 rounded-lg container mx-auto">
           {/* top navbar */}
-          <div className="border shadow-md flex justify-end space-x-3 p-3 rounded-sm">
-            <img src="logo192.png" alt="question" className="w-10 h-10" />
-            <img src="logo192.png" alt="message" className="w-10 h-10" />
-            <img src="logo192.png" alt="profile" className="w-10 h-10" />
-            <div>
+          <div className="border shadow-md flex justify-end space-x-3 p-3 rounded-sm bg-white">
+            <img
+              src="help.png"
+              alt="question"
+              className="lg:w-7 lg:h-7 h-5 w-5 mt-2.5"
+            />
+            <img
+              src="message.png"
+              alt="message"
+              className="lg:w-7 lg:h-7 h-5 w-5 mt-2.5"
+            />
+            <img
+              src="user.png"
+              alt="profile"
+              className="lg:w-7 lg:h-7 h-5 w-5 mt-2.5"
+            />
+            <div className="text-sm md:text-medium">
               <p>Roman Dimitri</p>
               <p>Owner</p>
             </div>
           </div>
 
           {/* wrap content */}
-          <div className="m-5">
+          <div className="md:m-5 m-3">
             {/* order statistic */}
             <p className="text-lg my-2">Order Statistic</p>
-            <div className="flex flex-row space-x-5">
-              <div className="border shadow-md p-3 flex flex-row space-x-3 rounded-lg">
+            <div className="flex md:flex-row flex-col md:space-x-5 md:space-y-0 space-y-2 w-full">
+              <div className="border shadow-md p-3 flex flex-row space-x-3 rounded-lg bg-white">
                 <div className="pl-2">
                   <p className="text-xs">Total Selling</p>
                   <p className="text-lg pt-4">890</p>
@@ -74,14 +87,14 @@ const Dashboard = () => {
                   <p>20.5%</p>
                 </div>
               </div>
-              <div className="border shadow-md p-3 flex flex-row space-x-3 rounded-lg">
-                <div className="px-4">
+              <div className="border shadow-md p-3 flex flex-row space-x-3 rounded-lg bg-white">
+                <div className="md:px-4 pl-2">
                   <p className="text-xs">Expired Inventory</p>
                   <p className="text-lg pt-4">890</p>
                 </div>
               </div>
-              <div className="border shadow-md p-3 flex flex-row space-x-3 rounded-lg">
-                <div className="px-4">
+              <div className="border shadow-md p-3 flex flex-row space-x-3 rounded-lg bg-white">
+                <div className="md:px-4 pl-2">
                   <p className="text-xs">Out of stock Inventory</p>
                   <p className="text-lg pt-4">12</p>
                 </div>
@@ -89,9 +102,9 @@ const Dashboard = () => {
             </div>
 
             {/* wrap sales & purchase, total transaksi, sales, purchase */}
-            <div className="flex flex-row mt-5">
+            <div className="flex md:flex-row flex-col mt-5">
               {/* sales & purchase */}
-              <div className="basis-4/6">
+              <div className="lg:basis-4/6 md:basis-4/6 bg-white">
                 <div className="border shadow-md rounded-lg p-5">
                   <div className="relative">
                     <img
@@ -99,14 +112,14 @@ const Dashboard = () => {
                       alt="threedots"
                       className="absolute right-0 top-0 h-5 w-5"
                     />
-                    <p className="absolute top-12 left-80 bg-black rounded-lg p-1 text-white font-light text-sm">
-                      <span className="text-green-300 font-bold">^</span> 23.5%
-                    </p>
                   </div>
                   <p className="text-lg">Sales & Purchase</p>
-                  <div className="h-64 flex items-end">
+                  <p className="p-1 text-black mt-5 text-sm md:text-base text-center">
+                    <span className="text-green-300 font-bold">^</span> 23.5%
+                  </p>
+                  <div className="h-60flex items-end">
                     <div className="w-full">
-                      <div className="flex flex-row mx-5 space-x-6 items-end">
+                      <div className="flex flex-row md:mx-5 lg:space-x-6 md:space-x-3 space-x-1 items-end text-xs md:text-base ">
                         <div className="basis-1/12">
                           <div className="border rounded-md bg-blue-500 h-24"></div>
                           <p>Jan</p>
@@ -159,7 +172,7 @@ const Dashboard = () => {
                     </div>
                   </div>
 
-                  <div className="mt-5 flex flex-row space-x-5 ">
+                  <div className="mt-5 flex flex-row md:space-x-5 space-x-1">
                     <div className="basis-1/4 text-center p-5">
                       <p>Target</p>
                       <p className=" text-green-500">^ 231</p>
@@ -181,20 +194,20 @@ const Dashboard = () => {
               </div>
 
               {/* total transaksi, salaes, purchase */}
-              <div className="basis-2/6 space-y-5 flex flex-col">
-                <div className="mx-5 basis-1/3 rounded-lg shadow-md flex justify-end p-5">
+              <div className="lg:basis-2/6 md:basis-2/6 space-y-5 mt-5 md:mt-0 flex flex-col">
+                <div className="md:mx-5 basis-1/3 rounded-lg shadow-md flex justify-end p-5 bg-white">
                   <div className="flex flex-col text-end">
                     <p>Total Transaksi</p>
                     <p className="text-xl pt-5 font-bold">Rp. 80.000.000</p>
                   </div>
                 </div>
-                <div className="mx-5 basis-1/3 rounded-lg shadow-md flex justify-end p-5">
+                <div className="md:mx-5 basis-1/3 rounded-lg shadow-md flex justify-end p-5 bg-white">
                   <div className="flex flex-col text-end">
                     <p>Sales</p>
                     <p className="text-xl pt-5 font-bold">289</p>
                   </div>
                 </div>
-                <div className="mx-5 basis-1/3 rounded-lg shadow-md flex justify-end p-5">
+                <div className="md:mx-5 basis-1/3 rounded-lg shadow-md flex justify-end p-5 bg-white">
                   <div className="flex flex-col text-end">
                     <p>Purchase</p>
                     <p className="text-xl pt-5 font-bold">289</p>
@@ -203,9 +216,9 @@ const Dashboard = () => {
               </div>
             </div>
             {/* wrap inventory and persentasi */}
-            <div className="flex">
+            <div className="md:flex">
               {/* inventory */}
-              <div className="border mt-5 p-5 w-96 rounded-lg shadow-md">
+              <div className="border mt-5 p-5 md:w-96 rounded-lg shadow-md bg-white">
                 <p className="text-lg">Inventory</p>
                 <div className="relative">
                   <img
@@ -248,7 +261,7 @@ const Dashboard = () => {
                 </div>
               </div>
               {/* persentase */}
-              <div className="border mt-5 ml-5 p-5 w-96 rounded-lg shadow-md">
+              <div className="border mt-5 md:ml-5 p-5 md:w-96 rounded-lg shadow-md bg-white">
                 <p>Persentase Penjualan Obat</p>
                 {/* diagram */}
                 <div className="flex justify-center my-5">

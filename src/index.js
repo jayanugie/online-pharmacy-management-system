@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NextRegister from "./pages/NextRegister";
 import Dashboard from "./pages/Dashboard";
+import PageNotFound from "./pages/PageNotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
       <Route path="/register" element={<Register />} />
       <Route path="/register-2" element={<NextRegister />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   </BrowserRouter>
 );

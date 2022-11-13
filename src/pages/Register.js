@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import "../index.css";
 
 const Register = () => {
   return (
-    <div>
+    <div className="bg-register">
       <Navbar />
 
       <div className="flex flex-row">
