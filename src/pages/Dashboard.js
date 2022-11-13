@@ -5,10 +5,12 @@ const Dashboard = () => {
     <div className="font-semibold bg-dashboard">
       <div className="flex flex-row">
         {/* navbar aside */}
-        <div className="border basis-1/5 p-5 h-screen hidden lg:block m-1 shadow-md rounded-sm bg-white">
-          <p className="w-12 font-bold text-lg md:text-2xl lg:text-4xl mb-40">
-            OLIN
-          </p>
+        <div className="border basis-1/5 p-5 h-auto hidden lg:block m-1 shadow-md rounded-sm bg-white">
+          <a href="/">
+            <p className="w-12 font-bold text-lg md:text-2xl lg:text-4xl mb-40">
+              OLIN
+            </p>
+          </a>
           <div className="space-y-4">
             <a
               className="flex bg-gray-200 text-blue-500 p-2 border-l-4 rounded-r-sm border-blue-500 font-bold"
@@ -48,7 +50,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="md:basis-4/5 m-0 md:-1 rounded-lg container mx-auto">
+        <div className="md:basis-4/5 m-0 md:m-1 rounded-lg container mx-auto">
           {/* top navbar */}
           <div className="border shadow-md flex justify-end space-x-3 p-3 rounded-sm bg-white">
             <img
@@ -108,7 +110,7 @@ const Dashboard = () => {
                 <div className="border shadow-md rounded-lg p-5">
                   <div className="relative">
                     <img
-                      src="logo192.png"
+                      src="more.png"
                       alt="threedots"
                       className="absolute right-0 top-0 h-5 w-5"
                     />
@@ -222,7 +224,7 @@ const Dashboard = () => {
                 <p className="text-lg">Inventory</p>
                 <div className="relative">
                   <img
-                    src="logo192.png"
+                    src="more.png"
                     alt="threedots"
                     className="absolute right-0 bottom-2 w-5 h-5"
                   />
