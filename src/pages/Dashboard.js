@@ -197,20 +197,41 @@ const Dashboard = () => {
 
               {/* total transaksi, salaes, purchase */}
               <div className="lg:basis-2/6 md:basis-2/6 space-y-5 mt-5 md:mt-0 flex flex-col">
-                <div className="md:mx-5 basis-1/3 rounded-lg shadow-md flex justify-end p-5 bg-white">
-                  <div className="flex flex-col text-end">
+                <div className="md:mx-5 basis-1/3 rounded-lg shadow-md flex flex-row p-5 bg-white">
+                  <div className="basis-1/3">
+                    <img
+                      src="/transaction.png"
+                      alt="transaction"
+                      className="md:h-20 h-16"
+                    />
+                  </div>
+                  <div className="flex flex-col text-end basis-2/3">
                     <p>Total Transaksi</p>
                     <p className="text-xl pt-5 font-bold">Rp. 80.000.000</p>
                   </div>
                 </div>
-                <div className="md:mx-5 basis-1/3 rounded-lg shadow-md flex justify-end p-5 bg-white">
-                  <div className="flex flex-col text-end">
+                <div className="md:mx-5 basis-1/3 rounded-lg shadow-md flex flex-row p-5 bg-white">
+                  <div className="basis-1/3">
+                    <img
+                      src="/list.png"
+                      alt="transaction"
+                      className="md:h-20 h-16"
+                    />
+                  </div>
+                  <div className="flex flex-col text-end basis-2/3">
                     <p>Sales</p>
                     <p className="text-xl pt-5 font-bold">289</p>
                   </div>
                 </div>
-                <div className="md:mx-5 basis-1/3 rounded-lg shadow-md flex justify-end p-5 bg-white">
-                  <div className="flex flex-col text-end">
+                <div className="md:mx-5 basis-1/3 rounded-lg shadow-md flex flex-row p-5 bg-white">
+                  <div className="basis-1/3">
+                    <img
+                      src="/dollar.png"
+                      alt="transaction"
+                      className="md:h-20 h-16"
+                    />
+                  </div>
+                  <div className="flex flex-col text-end basis-2/3">
                     <p>Purchase</p>
                     <p className="text-xl pt-5 font-bold">289</p>
                   </div>
